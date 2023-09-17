@@ -8,6 +8,9 @@ app.use(cors())
 
 const port = process.env.PORT || 3000
 
+//Traer Rutas
+app.use("/api", require("./routes"))
+
 app.listen(port, () => {
     console.log('Servidor Online en: http://localhost:'+ port)
 })
